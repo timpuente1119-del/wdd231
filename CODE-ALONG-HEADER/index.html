@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+
     <!-- Styles -->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
@@ -14,13 +19,30 @@
 </head>
 <body>
     <header>
+        <img src="images/house.svg" alt="site logo" width="16" height="16">
+        <span>Tim's Site Title</span>
+        <button id="ham-btn" class="hamburger"></button>
 
+        <nav id="nav-bar" class="navigation">
+            <uL>
+                <li ><a href="#" aria-current="page">News &amp; Events</a></li>
+                <li class="current"><a href="#">Dedicated Temples</a></li>
+                <li><a href="#">Announced Temples</a></li>
+            </uL>
+        </nav>
     </header>
     <main>
-
+        <h1>Dedicated Temples</h1>
     </main>
     <footer>
-        
+        <div class="social">
+            <a href="https://github.com/timpuente1119-del/wdd231" target="_blank"><img src="images/github.svg" alt="My GitHub" width="16" height="16"></a>
+            <a href="https://www.linkedin.com/in/tim-puente/" target="_blank"><img src="images/linkedin.svg" alt="My LinkedIn Profile" width="16" height="16"></a>
+            <a href="https://www.pinterest.com/timpuente1119/" target="_blank"><img src="images/pinterest.svg" alt="My Pinterest Profile" width="16" height="16"></a>
+        </div>
+
+         <p>&copy; <span id="currentyear"></span> Timothy Puente AZ</p>
+        <p id="lastModified"></p>
     </footer>
 </body>
 </html>
