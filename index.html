@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Timothy Puente - WDD231">
+    <meta name="description" content="This is the home page for the WDD231 course.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wdth@0,75..100;1,75..100&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- Scripts -->
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+
+    <title>Home Page</title>
+</head>
+<body>
+    <header>
+        <img src="images//sack-dollar-solid-full.svg" alt="Tim's Site Logo" width="16" height="16">
+        <span>Tim's Home Page</span>
+        <button id="ham-btn" class="hamburger"></button>
+
+         <nav id="nav-bar" class="navigation">
+            <uL>
+                <li class="current"><a href="#" aria-current="page">Home</a></li>
+                <li ><a href="#">Chamber Project</a></li>
+                <li><a href="#">Final Project</a></li>
+            </uL>
+        </nav>
+    </header>
+    <main>
+        <h1>Home</h1>
+        <div class="desktop-view">
+            <section>
+                <h2>About Me</h2>
+                <p>I am from Maricopa, Arizona. I love playing games with my family, baking, and learning new things. I am currently working at Wells Fargo while studying web development. I am married to the love of my love and have a wonderful and energetic son. 
+                </p>
+            </section>
+
+            <section>
+                <h2>Student Photo</h2>
+                <img src="images/profile.jpg" alt="Student Photo" width="200" height="150">
+            </section>
+        </div>
+        <section>
+            <h2> Web Certification Courses</h2>
+        </section>
+    </main>
+    <footer>
+        <div class="social">
+            <a href="https://github.com/timpuente1119-del/wdd231" target="_blank"><img src="images/github.svg" alt="My GitHub" width="16" height="16"></a>
+            <a href="https://www.linkedin.com/in/tim-puente/" target="_blank"><img src="images/linkedin.svg" alt="My LinkedIn Profile" width="16" height="16"></a>
+            <a href="https://www.pinterest.com/timpuente1119/" target="_blank"><img src="images/pinterest.svg" alt="My Pinterest Profile" width="16" height="16"></a>
+        </div>
+
+         <p>&copy; <span id="currentyear"></span> Timothy Puente AZ</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
