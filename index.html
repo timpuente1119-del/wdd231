@@ -27,10 +27,12 @@
     <header>
         <img src="images/sack-dollar-solid-full.svg" alt="Tim's Site Logo" width="16" height="16">
         <span>Tim's Home Page</span>
-        <button id="ham-btn" class="hamburger"></button>
+        <!-- When making a button with no text, make sure to use an aria label to make
+         it accessible  -->
+        <button id="ham-btn" class="hamburger" aria-label="Toggle navigation"></button>
 
          <nav id="nav-bar" class="navigation">
-            <uL>
+            <ul>
                 <li class="current"><a href="#" aria-current="page">Home</a></li>
                 <li ><a href="#">Chamber Project</a></li>
                 <li><a href="#">Final Project</a></li>
