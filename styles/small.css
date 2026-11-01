@@ -1,12 +1,14 @@
 *{
     margin: 0; 
     padding: 0;
+    /* just to make sure there's no horizontal scrolling */
+    box-sizing: border-box;
 }
-/* -------------------------------- COLOR ------------------------------ */
+/* -------------------------------- COLOR and TYPOGRAPHY ------------------------------ */
 
 :root{
     --primary: navy;
-    --h2primary: #354F52;
+    --h2primary: #2E3046;
     --hover: skyblue;
     --textcolor: #CBD5E1;
     --hovertextcolor: #36454F;
@@ -39,7 +41,7 @@ header img{
     display: block;
     width: 100%;
     height: auto;
-    padding-bottom: 2px;
+    
 }
 
 header span{
@@ -78,6 +80,8 @@ header span{
 
 .navigation.show{
     display: block;
+    width: 100%;
+    grid-column: 1 / -1;
 }
 
 .navigation ul{
@@ -86,6 +90,7 @@ header span{
     list-style-type: none;
     margin: 0;
     padding: 0;
+    width: 100%;
     
 }
 
@@ -96,12 +101,13 @@ header span{
     choose a color for the text, preferably one that goes with you color scheme,
     and then use text-decoration: none. */
     color: var(--textcolortextcolor);
-    
+    background-color: var(--h2primary);
     text-decoration: none;
     border: 1px solid var(--textcolor);
-    border-radius: 4px;
+    
     text-align: center;
-    align-items: center;
+    
+    width: 100%;
 }
 
 .navigation li.current{
@@ -117,10 +123,6 @@ header span{
 
 
 /* -------------------------------- MAIN ------------------------------ */
-
-main{
-    border: 2px solid darkred;
-}
 
 h1{
     margin-left: 10px;
@@ -148,6 +150,26 @@ section p{
 section img{
     border-radius: 4px;
     box-shadow: 5px 5px 12px var(--textcolor);
+}
+
+.filter-btn{
+    background-color: var(--h2primary);
+    color: var(--textcolor);
+    border: 1px solid var(--textcolor);
+    border-radius: 4px;
+    padding: .5rem 1rem;
+    margin: .5rem;
+    cursor: pointer;
+}
+
+.filter-btn:hover{
+    background-color: var(--hover);
+    color: var(--hovertextcolor);
+}
+
+.course-card-completed p{
+    background-color: coral;
+    color: var(--hovertextcolor);
 }
 
 /* -------------------------------- FOOTER ------------------------------ */

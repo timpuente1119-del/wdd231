@@ -1,0 +1,48 @@
+@media only screen and (min-width: 38rem){
+    header, main, nav, footer{
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    /* -------------------------------- HEADER ------------------------------ */
+    header{
+        grid-template-columns: 24px auto;
+        row-gap: 10px;
+    }
+    /* -------------------------------- HAMBURGER ------------------------------ */
+    .hamburger{
+        display: none;
+    }
+/* -------------------------------- NAVIGATION ------------------------------ */
+    .navigation, .navigation.show{
+        display: block;
+        width: 100%;
+        grid-column: 1 / -1;
+    }
+
+    .navigation ul{
+        display: flex;
+        flex-direction: row;
+        
+    }
+
+    .navigation li{
+        width: 100%;
+    }
+
+    .navigation a{
+        border: none;
+    }
+/* -------------------------------- SECTIONS ------------------------------ */
+    .desktop-view{
+        display: flex;
+    }
+
+    .courses{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+}

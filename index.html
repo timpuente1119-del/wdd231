@@ -19,12 +19,13 @@
     <!-- Scripts -->
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/classes.js" defer></script>
 
-    <title>Home Page</title>
+    <title>Home-Page</title>
 </head>
 <body>
     <header>
-        <img src="images//sack-dollar-solid-full.svg" alt="Tim's Site Logo" width="16" height="16">
+        <img src="images/sack-dollar-solid-full.svg" alt="Tim's Site Logo" width="16" height="16">
         <span>Tim's Home Page</span>
         <button id="ham-btn" class="hamburger"></button>
 
@@ -33,7 +34,7 @@
                 <li class="current"><a href="#" aria-current="page">Home</a></li>
                 <li ><a href="#">Chamber Project</a></li>
                 <li><a href="#">Final Project</a></li>
-            </uL>
+            </ul>
         </nav>
     </header>
     <main>
@@ -50,8 +51,13 @@
                 <img src="images/profile.jpg" alt="Student Photo" width="200" height="150">
             </section>
         </div>
-        <section>
+        <section >
             <h2> Web Certification Courses</h2>
+            <button id="all" class="filter-btn"> All</button>
+            <button id="cse" class="filter-btn"> CSE</button>
+            <button id="wdd" class="filter-btn"> WDD</button>
+            <p id="total-credits">Total Credits: 12</p>
+            <div id="courses" class="courses"></div>
         </section>
     </main>
     <footer>
