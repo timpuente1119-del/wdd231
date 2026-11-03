@@ -1,0 +1,29 @@
+{
+    "familyName": "Jones",
+    "dateOfMoveIn": "08/29/2026",
+    "numberOfFamilyMembers": 4,
+    "visitedbyBishopric": true,
+    "familyMembers":[
+        {
+            "name": "John Jones",
+            "gender": "male",
+            "birthdate": "06/19/1974"
+        },
+        {
+            "name": "Angelica Jones",
+            "gender": "female",
+            "birthdate": "03/27/1977"
+        },
+        {
+            "name": "Samuel Jones",
+            "gender": "male",
+            "birthdate": "11/12/2005"
+        },
+        {
+            "name": "Piper Jones",
+            "gender": "female",
+            "birthdate": "02/14/2008"
+        }
+    ]
+
+}
