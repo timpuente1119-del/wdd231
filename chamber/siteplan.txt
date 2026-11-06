@@ -1,0 +1,24 @@
+Site Name: Maricopa Chamber of Commerce
+
+Site purpose: provides info about local events, networking opportunities, business directories, and ads for local shopping.
+Aims to promote local business growth and support local business.
+
+Target Market: New and established residents, business owners, and entrepeneurs. 
+
+Goal: attract new businesses and make it as easy as possible for businesses to connect via networking and  provide information needed
+to grow a business. Also promote local economic growth.
+
+Possible users: small business owners, corporate officers, new residents
+
+Scenarios: Frank, 35, just came into town and wants to start a business in the recycling sector. He has an idea to use cooking oil to extract silver from electronics.
+            Sasha, corporate sales officer for State Insurance, wants to know of networking opportunies her salesmen can attend.
+            Martina, a local pastry chef owner, wants to expand her bakery to another location, and figure out what local festivities to attend to promote her bakery. 
+            
+
+SEO plan: Use relevant keywords in site descriptions, content, and blog posts.
+Verify the site on Google's Business Profile.
+Get inbound links or backlinks from all member business to improve rankings.
+Embed Google Analytics in all site pages.
+
+
+
