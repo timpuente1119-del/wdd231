@@ -12,7 +12,7 @@
 
         {
             "companyname": "Maricopa Plumbing",
-            "addess": "345 Main St, Maricopa, Arizona 85138",
+            "address": "345 Main St, Maricopa, Arizona 85138",
             "phone": "480 555 1234",
             "website": "https://www.mplumbing.com",
             "membershiplevel": "1",
@@ -21,7 +21,7 @@
 
         {
             "companyname": "Freddy's",
-            "addess": "123 Main St, Maricopa, Arizona 85138",
+            "address": "123 Main St, Maricopa, Arizona 85138",
             "phone": "480 555 5678",
             "website": "https://www.freddys.com",
             "membershiplevel": "1",
@@ -30,7 +30,7 @@
 
         {
             "companyname": "Genetix Inc.",
-            "addess": "432 Credo St, Maricopa, Arizona 85138",
+            "address": "432 Credo St, Maricopa, Arizona 85138",
             "phone": "620 555 9876",
             "website": "https://www.genetix.com",
             "membershiplevel": "3",
@@ -39,7 +39,7 @@
 
         {
             "companyname": "Fire Auto Repair",
-            "addess": "789 Oak Ave, Maricopa, Arizona 85138",
+            "address": "789 Oak Ave, Maricopa, Arizona 85138",
             "phone": "480 555 4321",
             "website": "https://www.fireautorepair.com",
             "membershiplevel": "2",
@@ -48,7 +48,7 @@
 
         {
             "companyname": "Bridge Cinema",
-            "addess": "101 Movie St, Maricopa, Arizona 85138",
+            "address": "101 Movie St, Maricopa, Arizona 85138",
             "phone": "480 555 9876",
             "website": "https://www.bridgecinema.com",
             "membershiplevel": "2",
@@ -57,7 +57,7 @@
 
         {
             "companyname": "Titan Power LLC",
-            "addess": "555 Industrial Dr, Maricopa, Arizona 85138",
+            "address": "555 Industrial Dr, Maricopa, Arizona 85138",
             "phone": "620 555 1111",
             "website": "https://www.titanpower.com",
             "membershiplevel": "3",
