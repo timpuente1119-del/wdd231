@@ -1,0 +1,67 @@
+{
+    "members":[
+        {
+            "companyname": "Big Rig Construction",
+            "address": "45 Cheapshot Rd suite 2, Maricopa, Arizonqa 85138",
+            "phone": "620 555 4343",
+            "website": "https://www.bigrigconstruction.com",
+            "membershiplevel": "1",
+            "image": "images/big-rig.webp"
+
+        },
+
+        {
+            "companyname": "Maricopa Plumbing",
+            "addess": "345 Main St, Maricopa, Arizona 85138",
+            "phone": "480 555 1234",
+            "website": "https://www.mplumbing.com",
+            "membershiplevel": "1",
+            "image": "images/plumbing.webp"
+        },
+
+        {
+            "companyname": "Freddy's",
+            "addess": "123 Main St, Maricopa, Arizona 85138",
+            "phone": "480 555 5678",
+            "website": "https://www.freddys.com",
+            "membershiplevel": "1",
+            "image": "images/freddys.webp"
+        },
+
+        {
+            "companyname": "Genetix Inc.",
+            "addess": "432 Credo St, Maricopa, Arizona 85138",
+            "phone": "620 555 9876",
+            "website": "https://www.genetix.com",
+            "membershiplevel": "3",
+            "image": "images/genetix.webp"
+        },
+
+        {
+            "companyname": "Fire Auto Repair",
+            "addess": "789 Oak Ave, Maricopa, Arizona 85138",
+            "phone": "480 555 4321",
+            "website": "https://www.fireautorepair.com",
+            "membershiplevel": "2",
+            "image": "images/auto-repair.webp"
+        },
+
+        {
+            "companyname": "Bridge Cinema",
+            "addess": "101 Movie St, Maricopa, Arizona 85138",
+            "phone": "480 555 9876",
+            "website": "https://www.bridgecinema.com",
+            "membershiplevel": "2",
+            "image": "images/movie-theatre.webp"
+        },
+
+        {
+            "companyname": "Titan Power LLC",
+            "addess": "555 Industrial Dr, Maricopa, Arizona 85138",
+            "phone": "620 555 1111",
+            "website": "https://www.titanpower.com",
+            "membershiplevel": "3",
+            "image": "images/power-plant.webp"
+        }
+    ]
+}
