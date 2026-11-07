@@ -143,23 +143,23 @@ header span{
 			margin: 0.1rem;
 		}
 
-        a{
-            color: var(--textcolor);
-            text-decoration: none;
-            width: 100%;
-
-            overflow-wrap: break-word;
-            
-            
-        }
+        
 	}
 
-	img {
+	
+
+
+}
+#company-cards.grid section a{
+    color: var(--textcolor);
+    text-decoration: none;
+}
+
+#company-cards.grid section img{
+    
 		border: 1px solid #fff;
 		box-shadow: 0 0 1rem #555;
-	}
-
-
+	
 }
 
 #company-cards.list {
