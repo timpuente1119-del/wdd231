@@ -24,34 +24,37 @@ listButton.addEventListener("click", () => {
     cards.classList.remove("grid");
 });
 
-const displayBusiness = (members) => {
-    members.forEach((member) => {
-        let card = document.createElement('section');
-        let businessName = document.createElement('h2');
-        let address = document.createElement('p');
-        let phone = document.createElement('p');
-        let website = document.createElement('a');
-        let portrait = document.createElement('img');
 
-        businessName.innerHTML = `${member.companyname}`;
-        address.innerHTML = `Address: ${member.address}`;
-        phone.innerHTML = `Phone: ${member.phone}`;
-        website.innerHTML = `Website: ${member.website}`;
-        website.setAttribute('href', member.website);
-        website.setAttribute('target', '_blank');
+    const displayBusiness = (members) => {
+        members.forEach((member) => {
+            let card = document.createElement('section');
+            let businessName = document.createElement('h2');
+            let address = document.createElement('p');
+            let phone = document.createElement('p');
+            let level = document.createElement('p');
+            let website = document.createElement('a');
+            let portrait = document.createElement('img');
 
-        portrait.setAttribute('src' , member.image);
-        portrait.setAttribute('alt', `Logo of ${member.name}`);
-        portrait.setAttribute('loading', 'lazy');
-        portrait.setAttribute('width', '340');
-        portrait.setAttribute('height', '440');
+            businessName.innerHTML = `${member.companyname}`;
+            address.innerHTML = `Address: ${member.address}`;
+            phone.innerHTML = `Phone: ${member.phone}`;
+            website.innerHTML = `Website: ${member.website}`;
+            level.innerHTML = `Membership Level: ${member.membershiplevel}`;
+            website.setAttribute('href', member.website);
+            website.setAttribute('target', '_blank');
 
-        card.appendChild(businessName);
-        card.appendChild(address);
-        card.appendChild(phone);
-        card.appendChild(website);
-        card.appendChild(portrait);
+            portrait.setAttribute('src' , member.image);
+            portrait.setAttribute('alt', `Logo of ${member.companyname}`);
+            portrait.setAttribute('loading', 'lazy');
+            portrait.setAttribute('width', '100');
+            portrait.setAttribute('height', '85');
 
-        cards.appendChild(card);
-    });
-};
+            card.appendChild(businessName);
+            card.appendChild(address);
+            card.appendChild(phone);
+            card.appendChild(website);
+            card.appendChild(portrait);
+
+            cards.appendChild(card);
+        });
+    };

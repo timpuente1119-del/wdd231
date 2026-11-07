@@ -19,7 +19,7 @@
     <!-- Styles -->
      <link rel="stylesheet" href="styles/normalize.css">
      <link rel="stylesheet" href="styles/small.css">
-     <link rel="stylesheet" href="styles/large.css">
+     <link rel="stylesheet" href="styles/large.css" media="print" onload="this.media='all'">
      
 
     <!-- Scripts -->
@@ -49,7 +49,7 @@
     </header>
 
     <main>
-        <div>
+        <div class="hero">
         <!-- place hero image -->
         <h1>Directory</h1>
         <button id="grid-btn" class="display-btn">Grid</button>
@@ -58,7 +58,7 @@
         </div>
 
 
-        <div id="company-cards"></div>
+        <div id="company-cards" class="grid"></div>
     </main>
 
     <footer>

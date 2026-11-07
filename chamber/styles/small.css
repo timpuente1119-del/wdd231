@@ -19,6 +19,15 @@ body{
     
 }
 
+:root{
+    --primary: navy;
+    --h2primary: #2E3046;
+    --hover: skyblue;
+    --textcolor: #CBD5E1;
+    --hovertextcolor: #36454F;
+}
+
+/* -------------------------------- HEADER ------------------------------ */
 header {
     display: grid;
     grid-template-columns: 44px auto 44px;
@@ -45,7 +54,7 @@ header span{
 .hamburger{
     background: none;
     border: none;
-    
+    color: var(--textcolor);
     /* this changes the cursor to a pointer when hovering over the button */
     cursor: pointer;
     font-family: Verdana, Geneva, Tahoma, sans-serif
@@ -91,7 +100,7 @@ header span{
     /* when trying to get rid of link highlight, 
     choose a color for the text, preferably one that goes with you color scheme,
     and then use text-decoration: none. */
-    color: var(--textcolortextcolor);
+    color: var(--textcolor);
     background-color: var(--h2primary);
     text-decoration: none;
     border: 1px solid var(--textcolor);
@@ -113,8 +122,81 @@ header span{
 }
 
 /* -------------------------------- MAIN ------------------------------ */
+.hero{
+    justify-content: center;
+    text-align: center;
+    padding: 1rem 10px;
+
+}
+#company-cards.grid{
+    display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-gap: 5px;
+	align-items: center;
+    
+
+    /*  modify section and img  */
+	section {
+        border: 1px solid var(--textcolor);
+		text-align: center;
+		& > * {
+			margin: 0.1rem;
+		}
+
+        a{
+            color: var(--textcolor);
+            text-decoration: none;
+            width: 100%;
+
+            overflow-wrap: break-word;
+            word-wrap: break-all;
+            
+        }
+	}
+
+	img {
+		border: 1px solid #fff;
+		box-shadow: 0 0 1rem #555;
+	}
 
 
+}
+
+#company-cards.list {
+	display: flex;
+	flex-direction: column;
+
+	section {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		margin: 0;
+		padding: 0.25rem;
+
+
+		& > * {
+			margin: 0 1rem;
+		}
+
+        a{
+            color: var(--textcolor);
+            text-decoration: none;
+            
+        }
+		img {
+			display: none;
+		}
+
+		h3 {
+			font-size: 1rem;
+		}
+
+		&:nth-child(even) {
+			background-color: var(--h2primary);
+            color: var(--textcolor);
+            border-top: 1px solid red;
+		}
+	}
+}
 /* -------------------------------- FOOTER ------------------------------ */
 footer{
     display: grid;
