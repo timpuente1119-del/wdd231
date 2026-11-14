@@ -25,6 +25,7 @@
     <!-- Scripts -->
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
     
 
     <!-- Favicon -->
@@ -35,7 +36,7 @@
 <body>
     <header>
         <img src="images/coins-solid-full.svg" alt="Chamber Logo" width="16" height="16">
-        <span>Maricopa Chamber of Commerce</span>
+        <span>Maricopa Chamber of Commerce: Home</span>
         <button id="ham-btn" class="hamburger" aria-label="Toggle navigation"></button>
 
          <nav id="nav-bar" class="navigation">
@@ -49,22 +50,30 @@
     </header>
     <main>
         <div class="hero">
+            
+            <!-- picture is too big. Causing side scrolling -->
             <img src="images/hero-image-chamber.webp" alt="Hero Image" loading="lazy">
+            <a href="#" class="button-link">Join Our Community</a>
 
 
         </div>
 
-        <div id="current-events">
+        <section id="current-events">
 
-        </div>
 
-        <div id="weather">
+        </section>
 
-        </div>
+        <section id="weather">
+            <p>The current temperature in Maricopa, AZ is <span id="current-temp"></span></p>
+            <figure>
+                <img id="weather-icon" src="" alt="">
+                <figcaption></figcaption>
+            </figure>
+        </section>
 
-        <div id="spotlights">
+        <section id="spotlights">
 
-        </div>
+        </section>
     </main>
 
     <footer>
