@@ -232,7 +232,11 @@ header span{
 }
 
 /* -------------------------------- HOME PAGE SPECIFIC ------------------------------ */
-
+#weather{
+    display: flex;
+    flex-direction: row;
+    
+}
 /* -------------------------------- FOOTER ------------------------------ */
 footer{
     display: grid;
