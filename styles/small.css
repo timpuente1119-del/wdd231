@@ -110,7 +110,7 @@ header span{
     width: 100%;
 }
 
-.navigation li.current{
+.navigation li.current a{
     background-color: #E07A5F;
     border-radius: 4px;
 
@@ -170,6 +170,32 @@ section img{
 .course-card-completed p{
     background-color: coral;
     color: var(--hovertextcolor);
+}
+
+dialog{
+    background-color: var(--textcolor);
+    color: var(--h2primary);
+    box-shadow: 5px 5px var(--textcolor);
+    width: 90%;
+    max-width: 600px;
+    padding: 0;
+}
+
+dialog::backdrop{
+    background-color: rgb(0 0 0/50%);
+}
+
+.dialog-btn::before{
+    content: "\00d7";
+}
+
+.dialog-btn{
+    position: absolute;
+    
+    cursor: pointer;
+    top: 10px;
+    right: 10px;
+    border: 1px solid white;
 }
 
 /* -------------------------------- FOOTER ------------------------------ */

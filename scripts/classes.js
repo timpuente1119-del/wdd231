@@ -1,3 +1,4 @@
+import { showCourse } from "./dialog.mjs";
 const courses = [
     {
         subject: 'CSE',
@@ -80,27 +81,35 @@ const courses = [
 
 let classes = document.getElementById('courses');
 
+
 function makeCard(array){
-	let htmlInsert = "";
+	classes.innerHTML = "";
 	array.forEach(course  => {
+        let card = document.createElement('div');
         if(course.completed === false){
-            htmlInsert += `
-                <div class="course-card">
+            card.className = "course-card";
+            card.innerHTML= `
+                
                     <p>${course.subject} ${course.number} </p>
-                </div>
+                
             `;
 
         } else if(course.completed === true){
-            htmlInsert += `
-                <div class="course-card-completed">
+            card.className = "course-card-completed";
+            card.innerHTML= `
+                
                     <p>&#10003; ${course.subject} ${course.number} </p>
-                </div>
+                
             `;
         }
-            
+
+        card.addEventListener('click', () =>{
+            showCourse(course);
+        });
+            classes.appendChild(card);
 	});
 
-classes.innerHTML = htmlInsert;
+
 };
 
 makeCard(courses);
