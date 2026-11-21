@@ -1,21 +1,42 @@
-const url = 'https://timpuente1119-del.github.io/wdd231/chamber/data/members.json';
+const memberURL = 'https://timpuente1119-del.github.io/wdd231/chamber/data/members.json';
 const spotlightCards = document.querySelector("#spotlights");
 
 async function getBusinessData(){
-    const response = await fetch(url);
+    const response = await fetch(memberURL);
     const data = await response.json();
 
     const filteredMembers = (data.members).filter(member => member.membershiplevel >= 2);
+    const shuffledMembers = getShuffled(filteredMembers);
+
+    // To limit the number of spotlights, .slice was suggested by AI. 
+    // Decided to go for 3 spot lights
+    const slicedMembers = shuffledMembers.slice(0, 3)
     // console.table(data.prophets);
-    displaySpotlight(filteredMembers);
+    displaySpotlight(slicedMembers);
 };
 
 getBusinessData();
 
+// to try to randomize the spot lights, I've looked up something 
+// called the Fisher-Yates shuffle function. Giving that a shot
+
+function getShuffled(array){
+    // using spread operator (...) to make a shallow copy of the 
+    // original array. This helps keep the original untouched. Had to look up how it works. It unpacks
+    // individual elements of an array or object and puts them in a new container
+    const shuffled = [...array];
+    for (let i = shuffled.length -1; i > 0; i--){
+        const j = Math.floor(Math.random() * (i + 1));
+        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+        
+    }
+    return shuffled;
+}
+
 
 
 const displaySpotlight = (members) => {
-    let count = 0;
+    
     members.forEach((member) => {
         
 

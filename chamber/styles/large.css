@@ -17,6 +17,17 @@
     #weather{
         flex-direction: row;
     }
+
+    #forecast{
+        display: grid;
+    }
+
+    /* -------------------------------- HOMEPAGE - SPOTLIGHTS ------------------------------ */
+
+    #spotlights{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
 /* -------------------------------- NAVIGATION ------------------------------ */
     .navigation, .navigation.show{
         display: block;
