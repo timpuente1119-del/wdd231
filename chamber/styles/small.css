@@ -232,15 +232,55 @@ header span{
 }
 
 /* -------------------------------- HOME PAGE SPECIFIC ------------------------------ */
+#current-events{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+}
+
+.biz, .progress{
+    background-color: var(--h2primary);
+    border: 1px solid var(--textcolor);
+    text-align: center;
+}
+
 #weather{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    border: 1px solid gold;
+    justify-content: space-around;
+    margin: 5px;
     
+}
+
+#forecast{
+    display: grid;
+    text-align: center;
+    border: 1px solid silver;
+    min-width: 0;
+
+
+
+}
+/* ran into an issue with the figures 
+being slit into 2 columns each. Had to use something
+called child combinator > to get the specific p right before
+the weather figures.  */
+#forecast > p{
+    grid-column: span 3;
+}
+
+figure{
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+
 }
 /* -------------------------------- FOOTER ------------------------------ */
 footer{
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    
     background-color: var(--primary);
     padding: 1rem 10px;
     text-align: left;

@@ -13,6 +13,10 @@
     .hamburger{
         display: none;
     }
+    /* -------------------------------- HOMEPAGE - WEATHER ------------------------------ */
+    #weather{
+        flex-direction: row;
+    }
 /* -------------------------------- NAVIGATION ------------------------------ */
     .navigation, .navigation.show{
         display: block;
@@ -34,5 +38,8 @@
         border: none;
     }
 
-
+    /* -------------------------------- FOOTER------------------------------ */
+    footer{
+        grid-template-columns: 1fr 2fr 1fr;
+    }
 }

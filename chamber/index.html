@@ -26,6 +26,8 @@
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/weather.js" defer></script>
+    <scrip src="scripts/spotlight.js" defer></scrip>
+    
     
 
     <!-- Favicon -->
@@ -59,14 +61,25 @@
         </div>
 
         <section id="current-events">
+            <div class="biz">
+                <h2>What the Biz?</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque fugit ipsa natus provident delectus quod! Atque saepe quis ex dolores rem perferendis libero et maxime sunt voluptatum, obcaecati, dignissimos consequuntur?</p>
+            </div>
 
+            <div class="progress">
+                <h2>Projects and Progress</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi cumque, ipsam excepturi dicta commodi repudiandae enim quibusdam iure. Sapiente hic rem corrupti, officiis earum recusandae consequuntur labore! Voluptate, repellendus earum.</p>
+
+            </div>
 
         </section>
 
         <section id="weather">
             
-            <figure>
-                <p>The current temperature in Maricopa, AZ is <span id="current-temp"></span></p>
+            <figure class="current">
+                <p> Maricopa, AZ </p>
+                <p>Current: <span id="current-temp"></p>
+                </span>
                 <img id="weather-icon" src="" alt="">
                 <figcaption></figcaption>
             </figure>

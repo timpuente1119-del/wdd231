@@ -54,11 +54,14 @@ async function apiFetch(){
     const threeDays = days.list.filter((item) => item.dt_txt.includes("18:00:00")).slice(0, 3);
     // 
     threeDays.forEach((day) => {
-        let card = document.createElement('section');
+        let card = document.createElement('figure');
         let min = document.createElement('p');
         let max = document.createElement('p');
         let date = document.createElement('p');
         let icon = document.createElement('img');
+        let desc = document.createElement('figcaption')
+
+        
         // AI suggested this format to help make the date readable
         const readableDate = new Date(day.dt * 1000).toLocaleDateString('en-US', {
             weekday: 'short',
@@ -73,11 +76,13 @@ async function apiFetch(){
 
         icon.setAttribute('src', `https://openweathermap.org/img/wn/${day.weather[0].icon}@2x.png`);
         icon.setAttribute('alt', day.weather[0].description);
+        desc.innerHTML = `${day.weather[0].description}`;
 
         card.appendChild(min);
         card.appendChild(max);
         card.appendChild(date);
         card.appendChild(icon);
+        card.appendChild(desc);
 
         foreCast.appendChild(card);
 
